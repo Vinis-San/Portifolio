@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Portifólio</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header_footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -15,22 +16,18 @@
         <div class="foto-logo"> <img src="image/meteba ginzenga.jfif" alt="Muteba ginzenga"> </div>
         <div class="container-nome-cargo">
             <H1>Vinicius de Sousa Andrade</H1>
-            <p>Aprendiz de Tecnologia da Informação</p>
+            <p>Analista de Dados</p>
         </div>
         <div class="sobre-mim">
             <h2>Sobre mim</h2>
             <p>
-                Sou o Vinicius, mas pode me chamar de Vini. Tenho paixão por tecnologia e, principalmente, pelo universo
-                dos dados — desde a coleta e integração até a análise e visualização em dashboards. Sempre gostei de
-                aprender coisas novas e, com o tempo, percebi o valor de transformar esse conhecimento em soluções
-                práticas e compartilháveis, seja em projetos reais, acadêmicos ou voluntários.
-
-                Hoje, atuo com análise de dados, criação de relatórios no Power BI, consultas SQL em múltiplas fontes e
-                integração de informações com Python, além de desenvolver automações que otimizam processos. Já
-                contribui para projetos que apoiaram a tomada de decisão em grandes empresas, como Banco do Brasil e
-                Brasal Refrigerantes, e também em iniciativas voluntárias. Meu foco é evoluir de forma constante,
-                aproveitando cada oportunidade para gerar insights estratégicos e agregar valor com dados bem
-                estruturados.
+                Sou o Vinicius, ou Vini. Tenho paixão por tecnologia e dados, desde a coleta até a análise e
+                visualização em dashboards. Adoro aprender e transformar conhecimento em soluções práticas, seja em
+                projetos reais, acadêmicos ou voluntários. Atualmente, trabalho com análise de dados, criação de
+                relatórios no Power BI, consultas SQL e integração de informações com Python e DAX. Também desenvolvo
+                automações para otimizar processos. Já contribuí para projetos que ajudaram na tomada de decisão em
+                empresas como Banco do Brasil e Brasal Refrigerantes, além de iniciativas voluntárias. Meu foco é
+                evoluir constantemente, gerando insights estratégicos e agregando valor com dados bem estruturados.
             </p>
         </div>
         <nav>
@@ -59,6 +56,7 @@
                     SQL
                 </div>
                 <div class="itenstech">Python</div>
+                <div class="itenstech">Draw.IO</div>
                 <div class="itenstech">Figma</div>
                 <div class="itenstech">Canva</div>
                 <div class="itenstech">n8n</div>
@@ -83,13 +81,30 @@
                     script de automação em Python, permite à equipe priorizar tarefas, identificar materiais em falta e
                     otimizar a operação de forma autônoma. O projeto resultou em maior eficiência e visibilidade do
                     fluxo de trabalho.</p>
-                    <button>Repositório GitHub</button>
+                <button>Repositório GitHub</button>
+            </div>
+            <div class="containerproject">
+                <h2>Painel de Manutenção Preventiva</h2>
+                <p>Painel de Monitoramento de Manutenção Preventiva
+                    Na Gestão de Equipamentos de Mercado (GEM) da Brasal, identifiquei um problema recorrente no SAP:
+                    ordens de manutenção preventiva ficavam inconsistentes porque técnicos iniciavam etapas sem realizar
+                    o fechamento, travando o fluxo e dificultando o acompanhamento.
+
+                    Para resolver, desenvolvi um painel em Power BI que oferece visibilidade imediata das ordens abertas
+                    e inconsistentes, permitindo análises em duas dimensões:
+
+                    Por Equipamento: tempo médio por etapa, reincidência em até 90 dias, indicadores de fluxo.
+
+                    Por Funcionário: atividade semanal/mensal, versatilidade e alocação de tarefas.
+
+                    Inicialmente voltado para triagem, o painel evoluiu para monitorar toda a oficina, consolidando-se
+                    como uma ferramenta essencial para controle operacional e tomada de decisões baseadas em dados.</p>
             </div>
         </div>
 
         <div id="Experience" class="conteudo">
-            <div class="containerexperiencia">
-                <h2>Analista de Dados - Aprendiz</h2>
+            <div class="containerexperiencia" id="brasalcard">
+                <h2>Analista de Dados | Aprendiz</h2>
                 <h4>Brasal Refrigerantes • Set 2024 - Até o momento</h4>
                 <p>
                     • Criação de relatórios e dashboards no Power BI</br>
@@ -98,7 +113,7 @@
                     • Estudo de metodologias ágeis e desenvolvimento web</br>
                 </p>
             </div>
-            <div class="containerexperiencia">
+            <div class="containerexperiencia" id="bbcard">
                 <h2>Estagiário de Dados</h2>
                 <h4>Banco do Brasil • Jun 2023 - Jun 2024</h4>
                 <p>
@@ -110,9 +125,7 @@
             </div>
         </div>
     </main>
-    <footer>
-        <p>Todos os Direitos Reservados!</p>
-    </footer>
+
     <script src="javascript/index.js"></script>
 
 </body>

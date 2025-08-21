@@ -1,21 +1,21 @@
-header{
+header {
     width: 100%;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid #b0b7b979;
 }
 
-.logo{
+.logo {
     width: 30%;
     color: #b0b7b9;
     align-items: center;
 }
 
-.logo h1{
+.logo h1 {
     font-size: 5vh;
 }
 
-.containerlinks{
+.containerlinks {
     width: 70%;
     display: flex;
     flex-direction: row;
@@ -23,7 +23,7 @@ header{
     align-items: center;
 }
 
-.containerlinks ul{
+.containerlinks ul {
     display: flex;
     flex-direction: row;
     width: 20%;
@@ -31,27 +31,12 @@ header{
     margin-right: 1vh;
 }
 
-.containerlinks li{
+.containerlinks li {
     list-style-type: none;
 }
 
-.containerlinks a{
+.containerlinks a {
     text-decoration: none;
     color: #b0b7b9;
     font-size: 2vh;
-}
-
-footer{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-top: 1px solid #b0b7b979;
-}
-
-footer p{
-    color:#b0b7b9;
-    margin-top: 1rem;
-    
 }

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header_footer.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="foto-logo"> <img src="image/meteba ginzenga.jfif" alt="Muteba ginzenga"> </div>
+        <div class="container-nome-cargo">
+            <H1>Vinicius de Sousa Andrade</H1>
+            <p>Aprendiz de Tecnologia da Informação</p>
+        </div>
+        <div class="sobre-mim">
+            <h2>Sobre mim</h2>
+            <p>
+                Sou o Vinicius, mas pode me chamar de Vini. Tenho paixão por tecnologia e, principalmente, pelo universo
+                dos dados — desde a coleta e integração até a análise e visualização em dashboards. Sempre gostei de
+                aprender coisas novas e, com o tempo, percebi o valor de transformar esse conhecimento em soluções
+                práticas e compartilháveis, seja em projetos reais, acadêmicos ou voluntários.
+
+                Hoje, atuo com análise de dados, criação de relatórios no Power BI, consultas SQL em múltiplas fontes e
+                integração de informações com Python, além de desenvolver automações que otimizam processos. Já
+                contribui para projetos que apoiaram a tomada de decisão em grandes empresas, como Banco do Brasil e
+                Brasal Refrigerantes, e também em iniciativas voluntárias. Meu foco é evoluir de forma constante,
+                aproveitando cada oportunidade para gerar insights estratégicos e agregar valor com dados bem
+                estruturados.
+            </p>
+        </div>
+        <nav>
+            <button id="btnConnect" onclick="trocarDiv('Connect', 'btnConnect')">Conexões</button>
+            <button id="btnTechnologies" onclick="trocarDiv('Technologies', 'btnTechnologies')">Tecnologias</button>
+            <button id="btnSkills" onclick="trocarDiv('Skills', 'btnSkills')">Skills</button>
+            <button id="btnProjects" onclick="trocarDiv('Projects', 'btnProjects')">Projetos</button>
+            <button id="btnExperience" onclick="trocarDiv('Experience', 'btnExperience')">Experiência</button>
+        </nav>
+        <div id="Connect" class="conteudo ativo">
+            <div class="containerbotao">
+                <button class="btn" onclick="redirecionar('mailto:bsbvinidesousa@gmail.com')">E-mail</button>
+                <button class="btn"
+                    onclick="redirecionar('https://www.linkedin.com/in/vin%C3%ADcius-andrade-912295234/')">Linkedin</button>
+                <button class="btn" onclick="redirecionar('https://wa.me/5561985254499')">WhatsApp</button>
+            </div>
+
+        </div>
+
+        <div id="Technologies" class="conteudo">
+            <div class="containertech">
+                <div class="itenstech">
+                    Power BI
+                </div>
+                <div class="itenstech">
+                    SQL
+                </div>
+                <div class="itenstech">Python</div>
+                <div class="itenstech">Figma</div>
+                <div class="itenstech">Canva</div>
+                <div class="itenstech">n8n</div>
+                <div class="itenstech">Excel</div>
+                <div class="itenstech">Power Automate</div>
+                <div class="itenstech">HTML</div>
+                <div class="itenstech">CSS</div>
+
+            </div>
+        </div>
+
+        <div id="Skills" class="conteudo">
+            <h2>Skills</h2>
+            <p>Minhas habilidades técnicas e interpessoais.</p>
+        </div>
+
+        <div id="Projects" class="conteudo">
+            <div class="containerproject">
+                <h2>Painel de Monitoramento</h2>
+                <p>Desenvolvi um painel em Power BI que transforma dados de reservas e estoque do SAP em um dashboard
+                    visual e em tempo real, exibido em TVs no chão de fábrica. A solução, que utiliza medidas DAX e um
+                    script de automação em Python, permite à equipe priorizar tarefas, identificar materiais em falta e
+                    otimizar a operação de forma autônoma. O projeto resultou em maior eficiência e visibilidade do
+                    fluxo de trabalho.</p>
+                    <button>Repositório GitHub</button>
+            </div>
+        </div>
+
+        <div id="Experience" class="conteudo">
+            <div class="containerexperiencia">
+                <h2>Analista de Dados - Aprendiz</h2>
+                <h4>Brasal Refrigerantes • Set 2024 - Até o momento</h4>
+                <p>
+                    • Criação de relatórios e dashboards no Power BI</br>
+                    • Mapeamento de processos operacionais</br>
+                    • Apoio na automação de consultas em endpoints SAP com Python</br>
+                    • Estudo de metodologias ágeis e desenvolvimento web</br>
+                </p>
+            </div>
+            <div class="containerexperiencia">
+                <h2>Estagiário de Dados</h2>
+                <h4>Banco do Brasil • Jun 2023 - Jun 2024</h4>
+                <p>
+                    • Criação de relatórios e dashboards no Power BI</br>
+                    • Mapeamento de processos operacionais</br>
+                    • Apoio na automação de consultas em endpoints SAP com Python</br>
+                    • Estudo de metodologias ágeis e desenvolvimento web</br>
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Todos os Direitos Reservados!</p>
+    </footer>
+    <script src="javascript/index.js"></script>
+
+</body>
+
+</html>

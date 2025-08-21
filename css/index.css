@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #131519;
+    color: #b0b7b9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foto-logo{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.foto-logo img{
+    width: 150px; /* Define um tamanho fixo */
+    height: 150px; /* Mantém proporções */
+    border-radius: 50%; /* Transforma em círculo */
+    object-fit: cover; /* Mantém o ajuste sem distorcer */
+}
+
+.container-nome-cargo{
+    margin-bottom: 3vh;
+}
+
+.sobre-mim{
+    margin-bottom: 2vh;
+    text-align: left;
+    line-height: 1.6;   
+}
+
+.sobre-mim h2{
+    margin-bottom: 2vh;
+    font-size: 3vh;
+    color: white;
+}
+
+nav {
+    background-color: rgb(54, 54, 54);
+    border-radius: 1vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(54, 54, 54);
+    color: #b0b7b9; 
+    transition: background-color 0.3s ease;
+    flex: 1;
+}
+
+.botao-ativo {
+    background-color: #131519;
+    border-radius: 1vh;
+    color: white;
+}
+
+.conteudo {
+    display: none;
+    padding: 20px;
+    margin-top: 10px;
+    width: 100%;
+}
+.ativo {
+    display: block; /* Mostra apenas a seção ativa */
+}
+
+#Connect{
+    width: 100%;
+}
+
+.containerbotao{
+   border-radius: 1vh;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.containerbotao .btn{
+    background-color: #131519;
+    border: 1px solid #b0b7b938;
+    border-radius: 1vh;
+    flex: 1 1 30%;
+    font-weight: bold;
+    font-size: 1.5vh;
+    transition: background-color 0.3s ease;
+    max-width: 30%;
+}
+.containerbotao .btn:hover{
+    background-color: #b0b7b938;
+    border: 1px solid #b0b7b938;
+    border-radius: 1vh;
+    flex: 1 1 30%;
+    font-weight: bold;
+    font-size: 1.5vh;
+    max-width: 30%;
+}
+
+
+.containerexperiencia{
+    text-align: left;
+    border-left:2px solid white;
+    padding-left: 1vh;
+    gap: 1vh;
+    margin: 1rem 0 1rem 0;
+}
+
+.containerexperiencia h2{
+    color: white;
+}
+.containerexperiencia h4{
+    font-weight: normal;
+    margin-bottom: 1vh;
+}
+
+
+.containertech{
+   border-radius: 1vh;
+   width: 100%;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 10px;
+}
+.containertech .itenstech{
+    background-color: #131519;
+    border: 1px solid #b0b7b938;
+    border-radius: 1vh;
+    font-weight: bold;
+    font-size: 1.5vh;
+    padding: 7px;
+}
+
+.containerproject{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #b0b7b938;
+    text-align: left;
+    border-radius: 1rem;
+}
+
+.containerproject h2{
+    margin: 1rem 1rem 0 1rem;
+    color: white;
+}
+
+.containerproject p{
+    margin:0.5rem 1rem 0.5rem 1rem;
+    line-height: 1.5;
+}
+
+.containerproject button{
+    background-color: #131519;
+    border: 1px solid #b0b7b938;
+    border-radius: 1vh;
+    flex: 1 1 30%;
+    font-weight: bold;
+    font-size: 2vh;
+    transition: background-color 0.3s ease;
+    max-width: 30%;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.containerproject button:hover{
+    background-color: #b0b7b938;
+    border: 1px solid #b0b7b938;
+    border-radius: 1vh;
+    flex: 1 1 30%;
+    font-weight: bold;
+    font-size: 2vh;
+    max-width: 30%;
+}

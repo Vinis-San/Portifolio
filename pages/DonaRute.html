@@ -1,294 +1,271 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dona Rute – Projeto</title>
 
     <!-- Fonte Roboto -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
     <style>
-      body {
-        margin: 0;
-        font-family: "Roboto", sans-serif;
-        background: #131519;
-        color: #e5e5e5;
-        line-height: 1.6;
-      }
+        body {
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+            background: #131519;
+            color: #e5e5e5;
+            line-height: 1.6;
+        }
 
-      .container {
-        width: 85%;
-        max-width: 1100px;
-        margin: auto;
-        padding: 40px 0;
-      }
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: auto;
+            padding: 45px 0;
+        }
 
-      h1,
-      h2 {
-        color: #ffffff;
-      }
+        h1,
+        h2 {
+            color: #ffffff;
+        }
 
-      .section {
-        background: #131519;
-        padding: 28px;
-        border-radius: 12px;
-        margin-bottom: 32px;
-        border: 1px solid #333;
-      }
+        .section {
+            background: #181b20;
+            padding: 32px;
+            border-radius: 12px;
+            margin-bottom: 34px;
+            border: 1px solid #2d2f33;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+        }
 
-      .section-title {
-        font-size: 26px;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
+        .section-title {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
 
-      .section-text {
-        font-size: 16px;
-        opacity: 0.9;
-      }
+        .section-text {
+            font-size: 16px;
+            opacity: 0.92;
+        }
 
-      .image-box {
-        width: 100%;
-        height: auto;
-        background: #2a2a2a;
-        border: 1px dashed #555;
-        border-radius: 10px;
-        margin: 18px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #888;
-        font-size: 15px;
-      }
-      .image-box img {
-        max-width: 100%;
-        max-height: 100%;
-        border-radius: 8px;
-      }
+        .image-box {
+            width: 100%;
+            min-height: 150px;
+            background: #22252b;
+            border: 1px dashed #555;
+            border-radius: 10px;
+            margin: 18px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-size: 15px;
+            padding: 12px;
+        }
 
-      .image-box video {
-        width: 100px;
-        border-radius: 8px;
-      }
+        .image-box img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
 
-      .subsection-title {
-        font-size: 20px;
-        margin-top: 18px;
-        font-weight: 600;
-      }
+        .image-box video {
+            width: 100%;
+            border-radius: 8px;
+        }
 
-      ul {
-        padding-left: 20px;
-      }
+        .subsection-title {
+            font-size: 20px;
+            margin-top: 22px;
+            font-weight: 600;
+        }
 
-      a.button {
-        display: inline-block;
-        padding: 12px 24px;
-        background: transparent;
-        border: 1px solid #4a4a4a;
-        color: #fff;
-        border-radius: 8px;
-        text-decoration: none;
-        margin-top: 12px;
-        transition: 0.2s;
-      }
+        ul {
+            padding-left: 24px;
+            margin-top: 10px;
+        }
 
-      a.button:hover {
-        background: #333;
-      }
-      .footer {
-        margin-top: 60px;
-        padding: 40px 0 25px;
-        background: #131519;
-        text-align: center;
-        border-top: 1px solid #333;
-      }
+        a.button {
+            display: inline-block;
+            padding: 12px 24px;
+            background: transparent;
+            border: 1px solid #4a4a4a;
+            color: #fff;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 18px;
+            transition: 0.2s;
+        }
 
-      .footer-icon {
-        margin-bottom: 18px;
-        opacity: 0.8;
-      }
+        a.button:hover {
+            background: #333;
+        }
 
-      .containerbotao {
-        display: flex;
-        justify-content: center;
-        gap: 16px;
-        margin-bottom: 20px;
-      }
+        /* FOOTER */
+        .footer {
+            margin-top: 60px;
+            padding: 40px 0 25px;
+            background: #131519;
+            text-align: center;
+            border-top: 1px solid #2f3134;
+        }
 
-      .btn {
-        padding: 10px 20px;
-        background: transparent;
-        border: 1px solid #444;
-        border-radius: 8px;
-        color: #e5e5e5;
-        font-size: 15px;
-        cursor: pointer;
-        transition: 0.2s ease-in-out;
-      }
+        .footer-icon {
+            margin-bottom: 18px;
+            opacity: 0.85;
+        }
 
-      .btn:hover {
-        background: #2a2a2a;
-      }
+        .containerbotao {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
 
-      .footer-copy {
-        color: #777;
-        font-size: 14px;
-        margin-top: 15px;
-      }
+        .btn {
+            padding: 10px 20px;
+            background: transparent;
+            border: 1px solid #444;
+            border-radius: 8px;
+            color: #e5e5e5;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+        }
+
+        .btn:hover {
+            background: #2a2a2a;
+        }
+
+        .footer-copy {
+            color: #777;
+            font-size: 14px;
+            margin-top: 15px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-      <!-- Título principal -->
-      <h1>Dona Rute – Assistente Inteligente via WhatsApp</h1>
 
-      <!-- Introdução -->
-      <div class="section">
-        <div class="section-title">Visão Geral</div>
-        <div class="section-text">
-          O <strong>Dona Rute</strong> é um assistente conversacional criado
-          para organizar a rotina de comunicação de um ministério com dezenas de
-          voluntários. Integrado ao WhatsApp, ele consulta escalas,
-          aniversariantes e dados internos em tempo real, envia lembretes
-          automáticos (7 dias antes, 2 dias antes e no dia), valida permissões
-          de acesso e responde dúvidas usando linguagem natural. Atualmente
-          atende mais de <strong>500 pessoas</strong>
-          diariamente.
-        </div>
-      </div>
+        <!-- Título principal -->
+        <h1>Dona Rute – Assistente Inteligente via WhatsApp</h1>
 
-      <!-- Problema -->
-      <div class="section">
-        <div class="section-title">O Problema</div>
-        <div class="section-text">
-          Antes da automação, havia dificuldade em manter a comunicação
-          organizada: voluntários esqueciam escalas, coordenadores precisavam
-          avisar manualmente, dúvidas eram repetidas e informações estavam
-          dispersas em várias fontes.
-        </div>
-      </div>
-
-      <!-- Solução -->
-      <div class="section">
-        <div class="section-title">A Solução</div>
-        <div class="section-text">
-          O sistema centraliza tudo em um único assistente no WhatsApp com:
+        <!-- Introdução -->
+        <div class="section">
+            <div class="section-title">Visão Geral</div>
+            <div class="section-text">
+                O <strong>Dona Rute</strong> é um assistente conversacional criado para organizar a rotina de comunicação
+                de um ministério com dezenas de voluntários. Integrado ao WhatsApp, ele consulta escalas,
+                aniversariantes e dados internos em tempo real, envia lembretes automáticos (7 dias antes, 2 dias antes
+                e no dia), valida permissões de acesso e responde dúvidas usando linguagem natural. Atualmente atende
+                mais de <strong>Dezenas de pessoas</strong> diariamente.
+            </div>
         </div>
 
-        <ul>
-          <li>Respostas inteligentes em linguagem natural</li>
-          <li>Acesso restrito apenas para voluntários cadastrados</li>
-          <li>Lembretes automáticos de escala</li>
-          <li>Disparo diário de aniversariantes para líderes e pastores</li>
-          <li>Integração total com banco de dados MySQL</li>
-          <li>Logs, monitoramento e tratamento de erros</li>
-        </ul>
-      </div>
-
-      <!-- Prints / Fluxo -->
-      <div class="section">
-        <div class="section-title">Fluxos e Demonstrações</div>
-        <div class="subsection-title">
-          <video
-            src="../video/donarute.mp4"
-            controls
-            style="width: 100%; border-radius: 8px"
-          ></video>
-        </div>
-        <div class="subsection-title">Fluxo principal – Conversas & IA</div>
-        <div class="image-box"><img src="../images/agenteIA.jpg" alt="" /></div>
-        <div class="subsection-title">Fluxo de lembretes de escala</div>
-        <div class="image-box"><img src="../images/escalas.jpg" alt="" /></div>
-        <div class="subsection-title">Fluxo de aniversariantes</div>
-        <div class="image-box">
-          Área reservada para print do fluxo de aniversariantes
-        </div>
-      </div>
-
-      <!-- Arquitetura -->
-      <div class="section">
-        <div class="section-title">Arquitetura Técnica</div>
-        <div class="section-text">
-          <strong>Tecnologias:</strong> n8n, MySQL, Redis, Evolution API, Google
-          Sheets, LLM (Gemini)
+        <!-- Problema -->
+        <div class="section">
+            <div class="section-title">O Problema</div>
+            <div class="section-text">
+                Antes da automação, havia dificuldade em manter a comunicação organizada: voluntários esqueciam escalas,
+                coordenadores precisavam avisar manualmente, dúvidas eram repetidas e informações estavam dispersas em
+                várias fontes, Pastores não sabiam direito os aniversariantes do dia então não conseguiam dar felicitações e etc.
+            </div>
         </div>
 
-        <ul>
-          <li>n8n para orquestração dos fluxos</li>
-          <li>Evolution API para envio e recepção via WhatsApp</li>
-          <li>MySQL para banco relacional principal</li>
-          <li>Redis para cache e memória da IA</li>
-          <li>
-            Google Sheets como fonte de dados sobre a escala dos voluntários
-          </li>
-        </ul>
-      </div>
+        <!-- Solução -->
+        <div class="section">
+            <div class="section-title">A Solução</div>
+            <div class="section-text">
+                O sistema centraliza tudo em um único assistente no WhatsApp com:
+            </div>
+            <ul>
+                <li>Respostas inteligentes em linguagem natural</li>
+                <li>Acesso restrito apenas para voluntários cadastrados</li>
+                <li>Lembretes automáticos de escala</li>
+                <li>Disparo diário de aniversariantes para líderes e pastores</li>
+                <li>Integração total com banco de dados MySQL</li>
+                <li>Logs, monitoramento e tratamento de erros</li>
+            </ul>
+        </div>
 
-      <!-- Resultados -->
-      <div class="section">
-        <div class="section-title">Resultados</div>
-        <ul>
-          <li>Quase zero esquecimentos de escala</li>
-          <li>Comunicação totalmente automatizada</li>
-          <li>Maior organização entre voluntários e líderes</li>
-          <li>Redução de carga operacional para coordenadores</li>
-          <li>Respostas rápidas e padronizadas</li>
-        </ul>
-      </div>
+        <!-- Prints / Fluxo -->
+        <div class="section">
+            <div class="section-title">Fluxos e Demonstrações</div>
 
-      <!-- Botão voltar -->
-      <a href="../index.html" class="button">← Voltar ao Portfólio</a>
+            <div class="subsection-title">Demonstração em Vídeo</div>
+            <div class="image-box">
+                <video src="../video/donarute.mp4" controls></video>
+            </div>
+
+            <div class="subsection-title">Fluxo principal – Conversas & IA</div>
+            <div class="image-box"><img src="../images/agenteIA.jpg" alt=""></div>
+
+            <div class="subsection-title">Fluxo de lembretes de escala</div>
+            <div class="image-box"><img src="../images/escalas.jpg" alt=""></div>
+
+            <div class="subsection-title">Fluxo de aniversariantes</div>
+            <div class="image-box">Área reservada para print do fluxo de aniversariantes</div>
+        </div>
+
+        <!-- Arquitetura -->
+        <div class="section">
+            <div class="section-title">Arquitetura Técnica</div>
+            <div class="section-text">
+                <strong>Tecnologias:</strong> n8n, MySQL, Redis, Evolution API, Google Sheets, LLM (Gemini)
+            </div>
+
+            <ul>
+                <li>n8n para orquestração dos fluxos</li>
+                <li>Evolution API para envio e recepção via WhatsApp</li>
+                <li>MySQL como banco relacional principal</li>
+                <li>Redis para cache e memória da IA</li>
+                <li>Google Sheets como fonte auxiliar de dados</li>
+            </ul>
+        </div>
+
+        <!-- Resultados -->
+        <div class="section">
+            <div class="section-title">Resultados</div>
+            <ul>
+                <li>Quase zero esquecimentos de escala</li>
+                <li>Comunicação totalmente automatizada</li>
+                <li>Maior organização entre voluntários e líderes</li>
+                <li>Redução de carga operacional para coordenadores</li>
+                <li>Respostas rápidas, padronizadas e acessíveis</li>
+            </ul>
+        </div>
+
+        <!-- Botão voltar -->
+        <a href="../index.html" class="button">← Voltar ao Portfólio</a>
+
     </div>
 
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-icon">
-        <!-- Ícone de internet (globo) -->
-        <svg
-          width="34"
-          height="34"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#bdbdbd"
-          stroke-width="1.6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="2" y1="12" x2="22" y2="12"></line>
-          <path
-            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"
-          ></path>
-        </svg>
-      </div>
+        <div class="footer-icon">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#bdbdbd" stroke-width="1.6"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                </path>
+            </svg>
+        </div>
 
-      <div class="containerbotao">
-        <button
-          class="btn"
-          onclick="redirecionar('mailto:bsbvinidesousa@gmail.com')"
-        >
-          E-mail
-        </button>
-        <button
-          class="btn"
-          onclick="redirecionar('https://www.linkedin.com/in/vin%C3%ADcius-andrade-912295234/')"
-        >
-          LinkedIn
-        </button>
-        <button
-          class="btn"
-          onclick="redirecionar('https://www.github.com/vinis-san')"
-        >
-          Github
-        </button>
-      </div>
+        <div class="containerbotao">
+            <button class="btn" onclick="redirecionar('mailto:bsbvinidesousa@gmail.com')">E-mail</button>
+            <button class="btn"
+                onclick="redirecionar('https://www.linkedin.com/in/vin%C3%ADcius-andrade-912295234/')">LinkedIn</button>
+            <button class="btn" onclick="redirecionar('https://www.github.com/vinis-san')">Github</button>
+        </div>
 
-      <p class="footer-copy">© 2025 — Vinicius de Sousa Andrade</p>
+        <p class="footer-copy">© 2025 — Vinicius de Sousa Andrade</p>
     </footer>
-<script src="../javascript/index.js"></script>
-  </body>
+
+    <script src="../javascript/index.js"></script>
+</body>
+
 </html>
